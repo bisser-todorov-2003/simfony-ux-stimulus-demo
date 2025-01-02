@@ -9,6 +9,11 @@
 </style>
 
 <div class="example-wrapper">
-    <div data-controller="counter"> </div>
+    <div data-controller="counter">
+        <button> Click Me</button>
+        I have been clicked
+        <span data-counter-target="count"> 0 </span>
+        times!
+    </div>
 </div>
 {% endblock %}
