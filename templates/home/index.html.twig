@@ -10,7 +10,9 @@
 
 <div class="example-wrapper">
     <div data-controller="counter">
-        <button> Click Me</button>
+        <button data-action="click->counter#increment">
+            Click Me
+        </button>
         I have been clicked
         <span data-counter-target="count"> 0 </span>
         times!

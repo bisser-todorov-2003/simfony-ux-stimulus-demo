@@ -4,13 +4,10 @@ export default class extends Controller {
     static targets = ['count'];
     connect() {
         this.count = 0;
-
-        this.element.addEventListener(
-            'click',
-            () => {
-                this.count++;
-                this.countTarget.innerHTML = this.count;
-            }
-        );
     }
+    increment() {
+        this.count++;
+        this.countTarget.innerHTML = this.count;
+    }
+
 }
